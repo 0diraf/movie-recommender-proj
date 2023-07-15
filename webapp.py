@@ -4,6 +4,9 @@ import pickle
 import requests
 import time
 import gc
+from pathlib import Path
+
+pkl_path = Path(__file__).parents[1]
 
 def getOverviewAndPoster(title, year):
 	if year!=0:
@@ -33,8 +36,8 @@ def recommender(k, title, distmatrix):
         
     return neighbors
 
-movies = pickle.load(open("movie-recommender-proj\\movies_data.pkl", "rb"))
-distmatrix = pickle.load(open("movie-recommender-proj\\cosdist_mat.pkl", "rb"))
+movies = pickle.load(open(pkl_path+"movies_data.pkl", "rb"))
+distmatrix = pickle.load(open(pkl_path+"cosdist_mat.pkl", "rb"))
 movie_names = movies["title"].values
 
 st.title("Movie Recommendation Engine")
