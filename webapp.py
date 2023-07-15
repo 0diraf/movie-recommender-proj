@@ -8,8 +8,8 @@ from pathlib import Path
 
 pkl_path = Path(__file__).parents[1]
 
-m = pkl_path + "movies_data.pkl"
-c = pkl_path + "cosdist_mat.pkl"
+m = pkl_path / "movies_data.pkl"
+c = pkl_path / "cosdist_mat.pkl"
 st.write(m)
 st.write(c)
 
