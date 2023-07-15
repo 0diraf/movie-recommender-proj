@@ -8,6 +8,11 @@ from pathlib import Path
 
 pkl_path = Path(__file__).parents[1]
 
+m = pkl_path + "movies_data.pkl"
+c = pkl_path + "cosdist_mat.pkl"
+st.write(m)
+st.write(c)
+
 def getOverviewAndPoster(title, year):
 	if year!=0:
 		url = "https://api.themoviedb.org/3/search/movie?query={}&include_adult=false&year={}&language=en-US&page=1".format(title, year)
@@ -36,8 +41,8 @@ def recommender(k, title, distmatrix):
         
     return neighbors
 
-movies = pickle.load(open(pkl_path+"movies_data.pkl", "rb"))
-distmatrix = pickle.load(open(pkl_path+"cosdist_mat.pkl", "rb"))
+movies = pickle.load(open(m, "rb"))
+distmatrix = pickle.load(open(c, "rb"))
 movie_names = movies["title"].values
 
 st.title("Movie Recommendation Engine")
