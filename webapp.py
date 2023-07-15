@@ -21,7 +21,7 @@ def getOverviewAndPoster(title, year):
 	
 	headers = {
 	    "accept": "application/json",
-	    "Authorization": "Bearer {}".format(api_key)
+	    "Authorization": "Bearer {}".format(st.secrets["api_key"])
 	}
 
 	response = requests.get(url, headers=headers)
