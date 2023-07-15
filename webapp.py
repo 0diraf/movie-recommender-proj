@@ -10,8 +10,6 @@ pkl_path = Path(__file__).parents[0]
 
 m = pkl_path / "movies_data.pkl"
 c = pkl_path / "cosdist_mat.pkl"
-st.write(m)
-st.write(c)
 
 def getOverviewAndPoster(title, year):
 	if year!=0:
