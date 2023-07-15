@@ -34,8 +34,8 @@ def recommender(k, title, distmatrix):
         
     return neighbors
 
-movies = pickle.load(open("movies_data.pkl", "rb"))
-distmatrix = pickle.load(open("cosdist_mat.pkl", "rb"))
+movies = pickle.load(open("movie-recommender-proj/movies_data.pkl", "rb"))
+distmatrix = pickle.load(open("movie-recommender-proj/cosdist_mat.pkl", "rb"))
 movie_names = movies["title"].values
 
 st.title("Movie Recommendation Engine")
