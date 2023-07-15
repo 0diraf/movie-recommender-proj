@@ -3,7 +3,6 @@ import sys
 sys.path.append(r'C:\\Users\\Farid\\Desktop\\New folder\\Project')
 import pickle
 import requests
-import apiconfig
 import time
 import gc
 
@@ -15,7 +14,7 @@ def getOverviewAndPoster(title, year):
 	
 	headers = {
 	    "accept": "application/json",
-	    "Authorization": "Bearer {}".format(apiconfig.api_key)
+	    "Authorization": "Bearer {}".format(api_key)
 	}
 
 	response = requests.get(url, headers=headers)
