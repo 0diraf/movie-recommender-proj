@@ -1,4 +1,8 @@
-### :white_check_mark: Objectives
+
+![myke-simon-atsUqIm3wxo-unsplash](https://github.com/0diraf/movie-recommender-proj/assets/139581253/de230104-8539-448c-bd0e-e73b9e770a26)
+
+
+## :white_check_mark: Objectives
 
 * Explore MovieLens dataset
 * Preprocess and transform the dataset for utilization in a content-based recommender system
