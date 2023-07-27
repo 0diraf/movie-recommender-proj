@@ -1,8 +1,19 @@
+### :white_check_mark: Objectives
+
+* Explore MovieLens dataset
+* Preprocess and transform the dataset for utilization in a content-based recommender system
+* Implement content-based recommendation function with cosine distance
+* Create a front-end with intuitive UI for easier access and use.
+
+****
+
 Written in python using pandas, numpy, and sklearn.
 
 This movie recommender uses TheMovieLens dataset which contains movie titles as well as their tag scores. After merging and preprocessing, the final dataset contains around 13k+ observations with 1100+ features. Principal component analysis is performed to select the features that are responsible for 95% of the variation. 
 
-$$cos(\theta) = \frac{A \times B}{||A|| . ||B||}$$
+$$ \text{cosine similarity} = cos(\theta) = \frac{A \times B}{||A|| . ||B||}$$
+
+$$1 - \text{cosine similarity} = \text{cosine distance} $$
 
 Based on the resulting dataset, a cosine distance matrix is calculated in which the observation in the ith row and jth column represents the cosine distance of ith movie from the jth movie and vice versa. 
 
