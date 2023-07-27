@@ -4,7 +4,7 @@ This movie recommender uses TheMovieLens dataset which contains movie titles as 
 
 <p><center><h3>
 
-  $cos(\theta) = \frac{A \times B}{||A|| . ||B||}$
+  $ cos(\theta) = \frac{A \times B}{||A|| . ||B||} $
   
 </h3></center></p>
 
