@@ -8,7 +8,7 @@
 * Explore MovieLens dataset
 * Preprocess and transform the dataset for utilization in a content-based recommender system
 * Implement content-based recommendation function with cosine distance
-* Create a [front-end](diraf-mrecommender.streamlit.app) with intuitive UI for easier access and use.
+* Create a [front-end](https://diraf-mrecommender.streamlit.app/) with intuitive UI for easier access and use.
 
 ****
 
@@ -24,4 +24,4 @@ Based on the resulting dataset, a cosine distance matrix is calculated in which 
 
 After a movie title is inputted and the number of recommendations (k) to be obtained is specified, the movie recommender returns k nearest movies to the inputted movie.
 
-Finally, I created a front-end with Streamlit where this movie recommendation engine can be used. [You can access it by clicking here.](diraf-mrecommender.streamlit.app)
+Finally, I created a front-end with Streamlit where this movie recommendation engine can be used. [You can access it by clicking here.](https://diraf-mrecommender.streamlit.app/)
