@@ -40,7 +40,7 @@ def recommender(k, title, distmatrix):
         
     return neighbors
 
-movies = pickle.load(open(m, "rb"))
+movies = pd.read_pickle(m)
 distmatrix = pickle.load(open(c, "rb"))
 movie_names = movies["title"].values
 
