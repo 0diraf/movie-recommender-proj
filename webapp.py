@@ -2,6 +2,7 @@ import streamlit as st
 import sys
 import pickle
 import requests
+import pandas as pd
 import time
 import gc
 from pathlib import Path
