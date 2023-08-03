@@ -24,4 +24,6 @@ Based on the resulting dataset, a cosine distance matrix is calculated in which 
 
 After a movie title is inputted and the number of recommendations (k) to be obtained is specified, the movie recommender returns k nearest movies to the inputted movie.
 
-Finally, I created a front-end with Streamlit where this movie recommendation engine can be used. [You can access it by clicking here.](https://diraf-mrecommender.streamlit.app/). Note: The webapp may be put to sleep due to inactivity. You may have to wake it up to access it.
+Finally, I created a front-end with Streamlit where this movie recommendation engine can be used. [You can access it by clicking here.](https://diraf-mrecommender.streamlit.app/). The webapp queries themoviedb.org database with the name of the movie and it's release year (if listed) to fetch the movie description and poster.
+
+Note: The webapp may be put to sleep due to inactivity. You may have to wake it up to access it.
